@@ -12,5 +12,7 @@
 /tmp/*
 !/log/.keep
 !/tmp/.keep
+*.swp
+*.swo
 
 .byebug_history
