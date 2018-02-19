@@ -31,6 +31,8 @@ group :development, :test do
   #  debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'pry'
+  gem 'factory_girl_rails'
+  gem 'faker'
   gem 'rspec-rails'
 end
 
