@@ -13,8 +13,8 @@ RSpec.describe ProductsController, type: :controller do
     context "when there are valid params" do
       before :each do
         post :create, params: { category_id: category.id,
-          product: { name: "Fakename", price: 1 }.as_json }.as_json,
-          format: :json
+                                product: { name: "Fakename", price: 1 }.as_json }.as_json,
+                      format: :json
       end
 
       it 'returns http success' do
@@ -31,8 +31,8 @@ RSpec.describe ProductsController, type: :controller do
     context "when there are invalid params" do
       before :each do
         post :create, params: { category_id: category.id,
-          product: { name: "", price: 1 }.as_json }.as_json,
-          format: :json
+                                product: { name: "", price: 1 }.as_json }.as_json,
+                      format: :json
       end
 
       it 'returns http status 422' do
